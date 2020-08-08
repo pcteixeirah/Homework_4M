@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- build:css dist/contacto.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <!-- endbuild -->
+
+    <title>Guia Hoteles</title>
+  </head>
+  <body>
+   
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Hoteles.co</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>        
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="./precios.html">Precios</a></li>
+                <li class="nav-item" data-toggle="popover" data-content="Consulte los términos y condiciones, así como todas las disposiciones legales pertinentes" data-placement="bottom">
+                    <a class="nav-link" href="#">Términos</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <h1>Contáctenos</h1>
+    </div>
+    <!--***************/ + MAIN + /***************-->   
+    <div class="container">
+        <!-- Navegacion  breadcrumb-->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html"><span class="oi oi-home espacio-icon"></span>Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+            </ol>
+        </nav>
+
+        <!--formulario de conacto-->
+        <h3>Déjenos su comentario</h3>
+        <hr>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-sm-9">
+                    <label for="domicilio">Domicilio</label>
+                    <input type="text" class="form-control" id="domicilio" placeholder="Ingrese su dirección">
+
+                </div>
+                <div class="form-group col-sm-3">
+                    <label for="provincia">Departamento</label>
+                    <select class="form-control" id="provincia">
+                        <option >Extrangero</option>
+                        <option >Otro Colombia</option>
+                        <option >Santander</option>
+                        <option >Atlántico</option>
+                        <option >Valle del Cauca</option>
+                        <option >Bogotá D.C.</option>
+                        <option selected>Antioquia</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comentario">Comentario</label>
+                <textarea id="comentario" rows="7" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input"  id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Quiero que me contacten
+                    </label>
+                </div>
+            </div>
+            <hr>
+            <button type="submit" class="btn btn-primary"><span class="oi oi-cloud-upload espacio-icon"></span>Enviar</button>
+        </form>
+
+ 
+    </div>
+
+    <!--***************/ + MAIN + /***************-->   
+         
+    <footer>
+        <div class="row">
+            <div class="col-sm-4 d-flex flex-column">
+                <a href="http://www.facebook.com">Facebook</a>
+                <a href="http://www.twitter.com">Twitter</a>
+                <a href="http://www.instagram.com">Instagram</a>
+                <a href="http://www.google.com">Google+</a>
+            </div>
+            <div class="col-sm-4">
+                <address>
+                    <h3>Oficina Central</h3>
+                    <p><span class="oi oi-map-marker espacio-icon"></span>MANIZALES: Av. Santander Cra. 23 # 65-11</p>
+                    <p><span class="oi oi-phone espacio-icon"></span>Tel: 875 65 95 – Cel: 321 453 09 87</p>
+                    <p><span class="oi oi-inbox espacio-icon"></span>pcteixeirah97@gmail.com</p>
+                </address>
+            </div>
+            <div class="col-sm-4 d-flex flex-column align-items-end">
+                <a href="http://www.facebook.com">Nosotros</a>
+                <a href="http://www.twiter.com">Precios</a>
+                <a href="http://www.instagran.com">Terminos y condiciones</a>
+                <a href="http://www.google.com">Contacto</a>
+            </div>
+        </div>
+    
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- build:js dist/contacto.js -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+    <!-- endbuild -->
+
+  </body>
+</html>

@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- build:css dist/index.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <!-- endbuild -->
+
+    <title>Guia Hoteles</title>
+  </head>
+  <body>
+   
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Hoteles.co</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>        
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="./precios.html">Precios</a></li>
+                <li class="nav-item" data-toggle="popover" data-content="Consulte los términos y condiciones, así como todas las disposiciones legales pertinentes" data-placement="bottom">
+                    <a class="nav-link" href="#">Términos</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--
+    <div class="jumbotron">
+        <h1>Hoteles</h1>
+    </div>
+-->
+    <div class="d-flex align-items-center">
+        <div class="banner-container">
+            <div class="row">
+                <div class="col text-herader text-center">
+                    <h1 class="display-4">Buscas la mejor opción para las próximas vacaciones</h1>
+                    <p class="lead">Encontrarás tu lugar en Colombia</p>
+
+                    <a href="./precios.html">
+                       <button type="button" class="btn btn-secondary btn-lg">Mira nuestros precios</button>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--***************/ + MAIN + /***************-->  
+    <div class="container">
+        <!-- Navegacion  breadcrumb-->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page"><span class="oi oi-home espacio-icon"></span>Home</li>
+            </ol>
+        </nav>
+
+        <!-- Notificiaciones-->
+        <div class="alert alert-success" role="alert">
+            <div class="progress" style="height: 3px;">
+                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>        
+            <h4 class="alert-heading">Bienvenido a Hoteles.co!</h4>
+            <p>Realizamos una evaluación exhaustiva para ofrecer los mejores hoteles de cada ciudad del país
+                a fin de que tengas variadas opciones para escoger.</p>
+            <hr>
+            <p class="mb-0">Algunos hoteles ofrecen descuentos ¡Qué esperas para echar un vistazo!</p>   
+            
+        </div>
+
+        <div class="alert alert-secondary" role="alert">
+            Para más informacion puedes contactarnos, <a href="/contacto.html" class="alert-link">¡te responderemos en seguida!</a>
+        </div>
+
+        <!-- Preguntas frecuentes -->
+        <div class="d-flex flex-wrap">
+            <div class="col-sm-4 mb-1">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funciona" aria-expanded="false" aria-controls="multicollapse1">¿Cómo funciona?</button>
+            </div>
+            <div class="col-sm-4 mb-1">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reserva" aria-expanded="false" aria-controls="multicollapse2">¿Cómo reservo?</button>
+            </div>
+            <div class="col-sm-4 mb-1">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago" aria-expanded="false" aria-controls="multicollapse2">¿Cómo pago?</button>
+            </div>
+
+        </div>
+
+        <div class="d-flex flex-wrap">
+            <div class="col-sm-4 collapse multi-collapse" id="funciona">
+                <p>
+                <h3>¿Cómo funciona?</h3>
+                <p>Busca los hoteles según tu preferencia, ¿ya viste los destinos que tenemos para ofrecerte?</p>
+                </p>
+            </div>
+            <div class="col-sm-4 collapse multi-collapse" id="reserva">
+                <p>
+                <h3>¿Cómo reservo?</h3>
+                <p>Busca tu ciudad de destino y luego realiza la reservación con tus datos</p>
+                </p>
+            </div>
+            <div class="col-sm-4 collapse multi-collapse" id="pago">
+                <p>
+                <h3>¿Cómo pago?</h3>
+                <p>Utiliza tu tarjeta favorita, ¡las recibimos todas!</p>
+                </p>
+            </div>
+        </div>
+        <hr>
+    
+        <!-- imagen -->
+        <div class="d-flex align-items-center">
+            <div class="img-container img-fluid">
+
+            </div>
+        </div>
+
+        <!-- carrousel -->
+        <div id="carrouselindicador" class="carousel slide carousel-fade img-slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carrouselindicador" data-slide-to="0" class="active"></li>
+              <li data-target="#carrouselindicador" data-slide-to="1"></li>
+              <li data-target="#carrouselindicador" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active img-fluid" data-interval="2000">
+                <img src="./images/Medellin.png" alt="img" class="d-block w-100" alt="Primer Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>HOTEL MEDELLÍN</h2>
+                    <h3>Visitanos!!!.</h3>
+                  </div>
+              </div>
+              <div class="carousel-item img-fluid" data-interval="2000">
+                <img src="./images/Manizales.png" alt="img" class="d-block w-100" alt="Segundo Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>HOTEL MANIZALES</h2>
+                    <h3>Visitanos!!!.</h3>
+                  </div>
+              </div>
+              <div class="carousel-item img-fluid" data-interval="2000">
+                <img src="./images/Cartagena.png" alt="img" class="d-block w-100" alt="Tercer Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>HOTEL CARTAGENA</h2>
+                    <h3>Visitanos!!!.</h3>
+                  </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carrouselindicador" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carrouselindicador" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+     
+        <!-- Reservaciones -->
+        <div class="d-flex flex-wrap flex-row-reverse">
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <div class="card-header">
+                    <h4 class="card-title">Hotel Bogotá</h4>
+        
+                </div>
+                <img class="card-img-top" src="./images/Bogota.png">
+                <div class="card-body">
+                    <p class="card-text">Hotel ubicado en pleno corazón de la capital, más cerca de los destinos que quieres visitar</p>
+                </div>
+                <button class="btn btn-outline-success btn-block" data-toggle="modal" data-target="#contacto"id="contactoBtn">contacto</button>
+                <button class="btn btn-primary btn-reserva" data-toggle="modal"
+                data-target="#reservar"><span class="oi oi-plus espacio-icon"></span>Reservar <span
+                        class="badge badge-pill badge-light" data-toggle="tooltip" data-placement="right" title="Solo para el mes de octubre">- 30%</span></button>
+                <div class="card-footer">
+                    <h6 class="card-subtitle text-muted">Bogotá D.C.</h6>
+                </div>
+            </div>
+        
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <div class="card-header">
+                    <h4 class="card-title">Hotel Medellín</h4>
+                </div>
+                <img class="card-img-top" src="./images/Medellin.png">
+                <div class="card-body">
+                    <p class="card-text">Hotel ubicado en pleno corazón de la capital de la montaña, más cerca de los destinos que quieres visitar</p>
+                </div>
+                <button class="btn btn-outline-success btn-block" data-toggle="modal" data-target="#contacto"id="contactoBtn1">contacto</button>
+                <button class="btn btn-primary btn-reserva" data-toggle="modal"
+                data-target="#reservar"><span class="oi oi-plus espacio-icon"></span>Reservar</button>
+        
+                <div class="card-footer">
+                    <h6 class="card-subtitle text-muted">Antioquia</h6>
+                </div>
+            </div>
+        
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <div class="card-header">
+                    <h4 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas incluyen clases de salsa GRATIS">Hotel Cali</h4>
+                </div>
+                <img class="card-img-top" src="./images/Cali.png">
+                <div class="card-body">
+                    <p class="card-text">Hotel ubicado en pleno corazón de la sucursal del cielo, más cerca de los destinos que quieres visitar</p>
+                </div>
+                <div>
+                    <button class="btn btn-outline-success btn-block" data-toggle="modal"
+                        data-target="#contacto"id="contactoBtn2">contacto</button>
+                    <button class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservar"><span class="oi oi-plus espacio-icon"></span>Reservar</button>
+                </div>
+                <div class="card-footer">
+                    <h6 class="card-subtitle text-muted">Valle del Cauca</h6>
+                </div>
+            </div>
+        
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <div class="card-header">
+                    <h4 class="card-title">Hotel Barranquilla</h4>
+                </div>
+                <img class="card-img-top" src="./images/Barranquilla.png">
+                <div class="card-body">
+                    <p class="card-text">Hotel ubicado en pleno corazón de la arenosa, más cerca de los destinos que quieres visitar</p>
+                </div>
+                <div>
+                    <button class="btn btn-outline-success btn-block" data-toggle="modal"
+                        data-target="#contacto"id="contactoBtn3">contacto</button>
+                    <button class="btn btn-primary btn-reserva" data-toggle="modal"
+                    data-target="#reservar"><span class="oi oi-plus espacio-icon"></span>Reservar <span
+                            class="badge badge-pill badge-light" data-toggle="tooltip" data-placement="top" title="La promocion termina en 15 dias">- 15%</span></button>
+                </div>
+                <div class="card-footer">
+                    <h6 class="card-subtitle text-muted">Atlántico</h6>
+                </div>
+            </div>
+        
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <div class="card-header">
+                    <h4 class="card-title">Hotel Bucaramanga</h4>
+                </div>
+                <img class="card-img-top" src="./images/Bucaramanga.png">
+                <div class="card-body">
+                    <p class="card-text">Hotel ubicado en pleno corazón de la ciudad bonita, más cerca de los destinos que quieres visitar</p>
+                </div>
+                <div>
+                    <button class="btn btn-outline-success btn-block" data-toggle="modal"
+                        data-target="#contacto"id="contactoBtn4">contacto</button>
+                    <button class="btn btn-primary btn-reserva"data-toggle="modal"
+                    data-target="#reservar"><span class="oi oi-plus espacio-icon"></span>Reservar</button>
+                </div>
+                <div class="card-footer">
+                    <h6 class="card-subtitle text-muted">Santander</h6>
+                </div>
+            </div>
+        
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <div class="card-header">
+                    <h4 class="card-title">Hotel Manizales</h4>
+                </div>
+                <img class="card-img-top" src="./images/Manizales.png">
+                <div class="card-body">
+                    <p class="card-text">Hotel ubicado en pleno corazón de la ciudad de las puertas abiertas, más cerca de los destinos que quieres visitar</p>
+                </div>
+                <div>
+                    <button class="btn btn-outline-success btn-block" data-toggle="modal"
+                        data-target="#contacto" id="contactoBtn5">contacto</button>
+                    <button class="btn btn-primary btn-reserva" data-toggle="modal"
+                    data-target="#reservar"><span class="oi oi-plus espacio-icon"></span>Reservar <span
+                            class="badge badge-pill badge-light" data-toggle="popover" data-content="La promocion termina en 15 dias" title="Promocion">- 15%</span></button>
+                </div>
+                <div class="card-footer">
+                    <h6 class="card-subtitle text-muted">Caldas</h6>
+                </div>
+            </div>
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <div class="card-header">
+                    <h4 class="card-title">Hotel Cartagena</h4>
+                </div>
+                <img class="card-img-top" src="./images/Cartagena.png">
+                <div class="card-body">
+                    <p class="card-text">Hotel ubicado en pleno corazón de la heroica, más cerca de los destinos que quieres visitar</p>
+                </div>
+                <div>
+                    <button class="btn btn-outline-success btn-block" data-toggle="modal"
+                        data-target="#contacto" id="contactoBtn6">contacto</button>
+                    <button class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservar"><span class="oi oi-plus espacio-icon"></span>Reservar</button>
+                </div>
+                <div class="card-footer">
+                    <h6 class="card-subtitle text-muted">Bolívar</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--***************/ + FIN MAIN + /***************-->  
+
+    <!--***************/ + modal de contacto + /***************--> 
+    <div class="modal fade" id="contacto" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Contacte con el Hotel</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                   <label for="recipient-name" class="col-form-label">Ingrese su email:</label>
+                   <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Mensaje:</label>
+                <textarea class="form-control" id="mesage-text" ></textarea>
+           </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success">Enviar</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--***************/ + modal de reservacion + /***************--> 
+      <div class="modal fade" id="reservar" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false"  aria-labelledby="reservaModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="reservaleModalLabel">Reservación</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <label for="recipient-name" class="col-form-label">Nombre completo</label>
+                        <input type="text" class="form-control" id="recipient-name" placeholder="Nombre y apellidos">
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="email" class="col-form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+                    </div>
+                </div>
+            
+                <div class="form-row">
+                    <div class="form-group col-sm-4">
+                        <label for="adultos" class="col-form-label">Adultos</label>
+                        <select class="form-control" id="adultos">
+                            <option selected>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label for="niños" class="col-form-label">Niños</label>
+                        <select class="form-control" id="niños">
+                            <option selected>0</option>
+                            <option >1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label for="Habitaciones" class="col-form-label">Habitaciones</label>
+                        <select class="form-control" id="Habitaciones">
+                            <option selected>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-sm-4">
+                        <label for="ingreso" class="col-form-label">Ingreso</label>
+                    
+                        <input type="date" class="form-control" id="Ingreso"  value="2018-07-22" min="2018-01-01" max="2018-12-31">
+                    
+                    </div>
+                    <div class="form-group col-sm-2">
+                        <label for="dias" class="col-form-label">Días</label>
+                        <select class="form-control" id="dias">
+                            <option selected>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                        </select>
+                    
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="Thabotacion" class="col-form-label">Tipo de habitación</label>
+                        <select class="form-control" id="Thabotacion">
+                            <option selected>con una cama</option>
+                            <option>con 2 camas</option>
+                            <option>con 3 o más camas</option>
+                        </select>
+                                             
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success">Enviar</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!--***************/ + footer + /***************-->   
+    <footer>
+        <div class="row">
+            <div class="col-sm-4 d-flex flex-column">
+                <a href="http://www.facebook.com">Facebook</a>
+                <a href="http://www.twitter.com">Twitter</a>
+                <a href="http://www.instagram.com">Instagram</a>
+                <a href="http://www.google.com">Google+</a>
+            </div>
+            <div class="col-sm-4">
+                <address>
+                    <h3>Oficina Central</h3>
+                    <p><span class="oi oi-map-marker espacio-icon"></span>MANIZALES: Av. Santander Cra. 23 # 65-11</p>
+                    <p><span class="oi oi-phone espacio-icon"></span>Tel: 875 65 95 – Cel: 321 453 09 87</p>
+                    <p><span class="oi oi-inbox espacio-icon"></span>pcteixeirah97@gmail.com</p>
+                </address>
+            </div>
+            <div class="col-sm-4 d-flex flex-column align-items-end">
+                <a href="http://www.facebook.com">Nosotros</a>
+                <a href="http://www.twiter.com">Precios</a>
+                <a href="http://www.instagran.com">Terminos y condiciones</a>
+                <a href="http://www.google.com">Contacto</a>
+            </div>
+        </div>
+    
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- build:js dist/index.js -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+        $('[data-toggle="popover"]').popover();
+
+        $('#contacto').on('show.bs.modal', function(e){
+            console.log('el modal se esta mostrando');
+        });
+
+        $('#contacto').on('shown.bs.modal', function(e){
+            console.log('el modal se mostro');
+        });
+
+        $('#contacto').on('hide.bs.modal', function(e){
+            console.log('el modal se esta ocultando');
+          
+        });
+        $('#contacto').on('hidden.bs.modal', function(e){
+            console.log('el modal se oculto');
+        });
+
+        $('#contactoBtn').on('click', function(){
+                $('#contactoBtn').removeClass('btn-outline-success');
+                $('#contactoBtn').addClass('btn-success');
+            });
+        $('#contactoBtn1').on('click', function () {
+            $('#contactoBtn1').removeClass('btn-outline-success');
+            $('#contactoBtn1').addClass('btn-success');
+        });
+        $('#contactoBtn2').on('click', function () {
+            $('#contactoBtn2').removeClass('btn-outline-success');
+            $('#contactoBtn2').addClass('btn-success');
+        });
+        $('#contactoBtn3').on('click', function () {
+            $('#contactoBtn3').removeClass('btn-outline-success');
+            $('#contactoBtn3').addClass('btn-success');
+        });
+        $('#contactoBtn4').on('click', function () {
+            $('#contactoBtn4').removeClass('btn-outline-success');
+            $('#contactoBtn4').addClass('btn-success');
+        });
+        $('#contactoBtn5').on('click', function () {
+            $('#contactoBtn5').removeClass('btn-outline-success');
+            $('#contactoBtn5').addClass('btn-success');
+        });
+        $('#contactoBtn6').on('click', function () {
+            $('#contactoBtn6').removeClass('btn-outline-success');
+            $('#contactoBtn6').addClass('btn-success');
+        });
+    });
+    </script>
+    <!-- endbuild -->
+
+  </body>
+</html>
