@@ -1,5 +1,5 @@
 .jumbotron {
-  color: #eaecee;
+  color: #dbecfd;
   margin-top: 38px;
   margin-bottom: 0px;
   background-image: linear-gradient(rgba(24, 49, 17, 0.486), rgba(34, 40, 39, 0.199)); }
@@ -9,7 +9,7 @@
   min-height: 100vh;
   margin-top: 50px;
   margin-bottom: 0px;
-  background-image: url(../imagenes/20170625_160221.jpg);
+  background-image: url(../images/Portada.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -20,15 +20,15 @@
   width: 100%;
   min-height: 100vh;
   position: absolute;
-  background-image: linear-gradient(#050e3a, rgba(34, 40, 39, 0.486)); }
+  background-image: linear-gradient(#08113b, rgba(34, 40, 39, 0.486)); }
 
 .text-herader {
   min-height: 30vh;
   margin-top: 90px;
   margin-bottom: 0px;
-  color: #eaecee;
+  color: #dbecfd;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background-image: linear-gradient(#050e3a, rgba(34, 40, 39, 0.199)); }
+  background-image: linear-gradient(#08113b, rgba(34, 40, 39, 0.199)); }
 
 .container {
   background-color: rgba(0, 100, 0, 0.055);
@@ -64,7 +64,9 @@ footer {
   /* background-color: rgb(205, 209, 148);*/
   margin-top: 40px;
   margin-bottom: 0px;
-  background-image: linear-gradient(#050e3a, rgba(34, 40, 39, 0.199)); }
+  background-image: linear-gradient(#08113b, #050101); }
 
 .espacio-icon {
   padding-right: 10px; }
+
+/*# sourceMappingURL=styles.css.map */

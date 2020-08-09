@@ -1,5 +1,6 @@
-$blue: #050e3a;
-$white: #eaecee;
+$blue: #08113b;
+$white: #dbecfd;
+$black: #050101;
 
 @mixin margenes($top, $bottom) {
     margin-top: $top;
@@ -15,7 +16,7 @@ $white: #eaecee;
     width: 100%;
     min-height: 100vh;
     @include margenes(50px, 0px);
-    background-image: url(../imagenes/20170625_160221.jpg);
+    background-image: url(../images/Portada.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -78,7 +79,7 @@ footer{
     padding: 10px 10px 0px 10px;
    /* background-color: rgb(205, 209, 148);*/
     @include margenes(40px, 0px);
-    background-image: linear-gradient($blue,rgba(34, 40, 39, 0.199));
+    background-image: linear-gradient($blue,$black);
 }
 .espacio-icon{
     padding-right: 10px;
